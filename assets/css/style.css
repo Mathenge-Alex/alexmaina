@@ -1,85 +1,84 @@
-/* Base styles with dynamic units */
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    font-size: 100%; /* 1rem = 16px */
 }
 
 h2 {
     color: #333740;
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.5rem; /* Responsive font size */
 }
 
 .hero, #portfolio, #about, #skills {
-    padding: 1.25rem 0.938rem; /* 20px top/bottom, 15px left/right */
+    padding: 1.25rem; /* Dynamic spacing */
     text-align: center;
 }
 
 .hero-icon {
-    width: 25vw; /* 25% of the viewport width, with a min and max value */
-    max-width: 100px;
-    min-width: 60px;
+    width: 25vw; /* Dynamic width based on viewport width, with a cap for larger screens below */
+    max-width: 100px; /* Cap size for larger screens */
+    height: auto;
     margin-bottom: 1rem;
 }
 
 h1 {
-    font-size: 1.25rem; /* 20px */
-    margin: 1rem 0 0.625rem; /* 16px top, 10px bottom */
+    font-size: 1.25rem;
 }
 
 p {
-    font-size: 0.875rem; /* 14px */
-    margin-top: 0.625rem; /* 10px */
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }
 
-/* Portfolio Section with dynamic units */
+/* Portfolio Section */
 .projects-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Single column layout for mobile */
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    gap: 0.9375rem;
 }
 
-.project img {
-    width: 100%;
-    height: auto;
-    border-radius: 0.5rem; /* 8px */
-}
-
-/* About Me & Skills Sections */
-.timeline-item, .skill {
+/* About Me Section */
+.timeline-item {
     padding: 1rem;
     margin-bottom: 1rem;
 }
 
+/* Skills & Services Section */
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.625rem;
+}
+
+.skill {
+    padding: 0.5rem 1rem;
+}
+
 /* Media Queries for larger screens */
-@media (min-width: 48em) { /* 768px */
+@media (min-width: 48em) { /* 768px equivalent */
     .hero-icon {
-        width: 15vw; /* Adjust the icon size based on viewport */
-        max-width: 150px;
-        min-width: 100px;
+        max-width: 150px; /* Fixed size cap for larger icons */
     }
 
     h1 {
-        font-size: 1.5rem; /* 24px */
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 1.125rem; /* 18px */
+        font-size: 1.125rem;
     }
 
     .projects-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Multi-column layout for desktop */
+        grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr)); /* Using rem for grid sizing */
     }
 
     .skills-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1.25rem;
     }
 
     .skill {
-        padding: 0.625rem 1.25rem; /* Adjust padding */
+        padding: 0.625rem 1.25rem;
     }
 }
