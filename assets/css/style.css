@@ -1,149 +1,150 @@
 body,
 html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 h2 {
-  color: #333740;
-  font-size: 1.5rem;
-  /* Responsive font size */
+    color: #333740;
+    font-size: 1.5rem;
+    /* Responsive font size */
 }
 
 .hero,
 #portfolio,
 #about,
 #skills {
-  padding: 1.25rem;
-  /* Dynamic spacing */
-  text-align: center;
+    padding: 1.25rem;
+    /* Dynamic spacing */
+    text-align: center;
 }
 
 #portfolio,
 #about {
-  background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 
 .hero-icon {
-  width: 25vw;
-  /* Dynamic width based on viewport width, with a cap for larger screens below */
-  max-width: 100px;
-  /* Cap size for larger screens */
-  height: auto;
-  margin-bottom: 1rem;
+    width: 25vw;
+    /* Dynamic width based on viewport width, with a cap for larger screens below */
+    max-width: 100px;
+    /* Cap size for larger screens */
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 h1 {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 p {
-  font-size: 1rem;
-  margin-top: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }
 
 /* Portfolio Section */
 .projects-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.9375rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.9375rem;
 }
 
 /* About Me Section */
 .timeline-item {
-  padding: 1rem;
-  margin-bottom: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Skills & Services Section */
 .skills-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.625rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.625rem;
 }
 
 .skill {
-  padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 /* Media Queries for larger screens */
 @media (min-width: 48em) {
-  /* 768px equivalent */
-  .hero-icon {
-    max-width: 150px;
-    /* Fixed size cap for larger icons */
-  }
 
-  h1 {
-    font-size: 1.5rem;
-  }
+    /* 768px equivalent */
+    .hero-icon {
+        max-width: 150px;
+        /* Fixed size cap for larger icons */
+    }
 
-  p {
-    font-size: 1.125rem;
-  }
+    h1 {
+        font-size: 1.5rem;
+    }
 
-  .projects-grid {
-    grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
-    /* Using rem for grid sizing */
-  }
+    p {
+        font-size: 1.125rem;
+    }
 
-  .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
+        /* Using rem for grid sizing */
+    }
 
-  .skill {
-    padding: 0.625rem 1.25rem;
-  }
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skill {
+        padding: 0.625rem 1.25rem;
+    }
 }
 
 /* Testimonials */
 #testimonials {
-  background-color: #ffffff;
-  padding: 1.25rem;
+    background-color: #ffffff;
+    padding: 1.25rem;
 }
 
 .testimonial p {
-  font-size: 1rem;
-  color: #333740;
+    font-size: 1rem;
+    color: #333740;
 }
 
 cite {
-  display: block;
-  margin-top: 0.5rem;
-  font-style: normal;
-  color: #4f5d75;
+    display: block;
+    margin-top: 0.5rem;
+    font-style: normal;
+    color: #4f5d75;
 }
 
 /* Contact Section */
 #contact {
-  background-color: #f0f0f0;
-  padding: 1.25rem;
+    background-color: #f0f0f0;
+    padding: 1.25rem;
 }
 
 #contact form {
-  display: grid;
-  gap: 0.625rem;
-  padding: 2rem;
+    display: grid;
+    gap: 0.625rem;
+    padding: 2rem;
 }
 
 input,
 textarea {
-  width: 100%;
-  padding: 0.625rem;
-  margin-bottom: 0.625rem;
-  /* For spacing between form elements */
-  border: 1px solid #ccc;
-  border-radius: 0.3125rem;
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+    /* For spacing between form elements */
+    border: 1px solid #ccc;
+    border-radius: 0.3125rem;
 }
 
 button {
-  padding: 0.625rem 1.25rem;
-  background-color: #333740;
-  color: white;
-  border: none;
-  border-radius: 0.3125rem;
-  cursor: pointer;
+    padding: 0.625rem 1.25rem;
+    background-color: #333740;
+    color: white;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
 }
