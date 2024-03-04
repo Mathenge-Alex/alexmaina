@@ -82,3 +82,22 @@ p {
         padding: 0.625rem 1.25rem;
     }
 }
+
+/* Testimonials */
+#testimonials {
+    background-color: #ffffff;
+    padding: 1.25rem;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    color: #333740;
+}
+
+cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-style: normal;
+    color: #4F5D75;
+}
+
