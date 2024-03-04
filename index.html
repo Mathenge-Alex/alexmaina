@@ -1,76 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Maina's Portfolio</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-    <header class="hero">
-        <img src="icon-path.jpg" alt="Alex Maina" class="hero-icon">
-        <h1>Welcome to Alex Maina's World</h1>
-        <p>I'm a Full-Stack Software Engineer and AI specialist dedicated to building impactful digital solutions.</p>
-    </header>
 
-    <section id="about">
-    <h2>About Me</h2>
-    <p>Detailed biography goes here. Talk about your journey, expertise in web development, AI, and other areas of interest.</p>
-    <div class="timeline">
-        <!-- Timeline item -->
-        <div class="timeline-item">
-            <h3>Year - Milestone</h3>
-            <p>Description of the milestone or achievement.</p>
-        </div>
-        <!-- Add more timeline items in similar manner -->
-    </div>
-</section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alex Maina's Portfolio</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
 
-<!-- Skills Section -->
+    <body>
+        <header class="hero">
+            <img src="icon-path.jpg" alt="Alex Maina" class="hero-icon">
+            <h1>Welcome to Alex Maina's World</h1>
+            <p>I'm a Full-Stack Software Engineer and AI specialist dedicated to building impactful digital solutions.
+            </p>
+        </header>
 
-<section id="skills">
-    <h2>Skills & Services</h2>
-    <div class="skills-list">
-        <!-- Skill -->
-        <div class="skill">Web Development</div>
-        <div class="skill">AI Solutions</div>
-        <div class="skill">SEO Consultancy</div>
-        <!-- Add more skills in similar manner -->
-    </div>
-</section>
-
-
-
-<!-- Portfolio -->
-    <section id="portfolio">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project" onclick="location.href='project1-url.html';">
-                <img src="project1-image.jpg" alt="Project 1">
-                <div class="project-info">
-                    <h3>Project 1</h3>
-                    <p>Short description of Project 1.</p>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Detailed biography goes here. Talk about your journey, expertise in web development, AI, and other areas
+                of interest.</p>
+            <div class="timeline">
+                <!-- Timeline item -->
+                <div class="timeline-item">
+                    <h3>Year - Milestone</h3>
+                    <p>Description of the milestone or achievement.</p>
                 </div>
+                <!-- Add more timeline items in similar manner -->
             </div>
-            <!-- Add more projects in similar manner -->
-        </div>
-    </section>
+        </section>
 
-    <!-- Testimonials section -->
-    <section id="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testimonial">
-        <p>“Alex is a highly skilled developer with a keen eye for detail. Working with him has significantly elevated our project.”</p>
-        <cite>– Client Name, Position</cite>
-    </div>
-    <!-- Additional testimonials -->
-</section>
+        <!-- Skills Section -->
 
-
-
+        <section id="skills">
+            <h2>Skills & Services</h2>
+            <div class="skills-list">
+                <!-- Skill -->
+                <div class="skill">Web Development</div>
+                <div class="skill">AI Solutions</div>
+                <div class="skill">SEO Consultancy</div>
+                <!-- Add more skills in similar manner -->
+            </div>
+        </section>
 
 
 
-</body>
+        <!-- Portfolio -->
+        <section id="portfolio">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project" onclick="location.href='project1-url.html';">
+                    <img src="project1-image.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Project 1</h3>
+                        <p>Short description of Project 1.</p>
+                    </div>
+                </div>
+                <!-- Add more projects in similar manner -->
+            </div>
+        </section>
+
+        <!-- Testimonials section -->
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>“Alex is a highly skilled developer with a keen eye for detail. Working with him has significantly
+                    elevated our project.”</p>
+                <cite>– Client Name, Position</cite>
+            </div>
+            <!-- Additional testimonials -->
+        </section>
+
+        <!-- Contact Section -->
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="submit-form-endpoint" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+
+
+
+
+    </body>
+
 </html>
