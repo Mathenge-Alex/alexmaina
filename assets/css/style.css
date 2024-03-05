@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -6,17 +7,102 @@ body, html {
 
 h2 {
     color: #333740;
-    font-size: 1.5rem; /* Responsive font size */
+    font-size: 1.5rem;
+    /* Responsive font size */
 }
 
-.hero, #portfolio, #about, #skills {
-    padding: 1.25rem; /* Dynamic spacing */
+/* Navbar Section */
+/* Base navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    transition: background-color 0.3s;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333740;
+}
+
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333740;
+}
+
+/* Additional CSS for scrolled navbar */
+.navbar.scrolled {
+    background-color: #f8f8f8; /* Lighter shade or transparent effect */
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333740;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        position: absolute;
+        background-color: white;
+        right: 0;
+        top: 60px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar-links a {
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+
+/* Hero Section */
+
+.hero,
+#portfolio,
+#about,
+#skills {
+    padding: 1.25rem;
+    /* Dynamic spacing */
     text-align: center;
 }
 
+#portfolio,
+#about {
+    background-color: #f0f0f0;
+}
+
 .hero-icon {
-    width: 25vw; /* Dynamic width based on viewport width, with a cap for larger screens below */
-    max-width: 100px; /* Cap size for larger screens */
+    width: 25vw;
+    /* Dynamic width based on viewport width, with a cap for larger screens below */
+    max-width: 100px;
+    /* Cap size for larger screens */
     height: auto;
     margin-bottom: 1rem;
 }
@@ -55,9 +141,12 @@ p {
 }
 
 /* Media Queries for larger screens */
-@media (min-width: 48em) { /* 768px equivalent */
+@media (min-width: 48em) {
+
+    /* 768px equivalent */
     .hero-icon {
-        max-width: 150px; /* Fixed size cap for larger icons */
+        max-width: 150px;
+        /* Fixed size cap for larger icons */
     }
 
     h1 {
@@ -69,7 +158,8 @@ p {
     }
 
     .projects-grid {
-        grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr)); /* Using rem for grid sizing */
+        grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
+        /* Using rem for grid sizing */
     }
 
     .skills-list {
@@ -98,6 +188,36 @@ cite {
     display: block;
     margin-top: 0.5rem;
     font-style: normal;
-    color: #4F5D75;
+    color: #4f5d75;
 }
 
+/* Contact Section */
+#contact {
+    background-color: #f0f0f0;
+    padding: 1.25rem;
+}
+
+#contact form {
+    display: grid;
+    gap: 0.625rem;
+    padding: 2rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+    /* For spacing between form elements */
+    border: 1px solid #ccc;
+    border-radius: 0.3125rem;
+}
+
+button {
+    padding: 0.625rem 1.25rem;
+    background-color: #333740;
+    color: white;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
