@@ -2,6 +2,7 @@ body,
 html {
     margin: 0;
     padding: 0;
+    padding-top: 60px;
     font-family: Arial, sans-serif;
 }
 
@@ -98,6 +99,19 @@ h2 {
     background-color: #f0f0f0;
 }
 
+.hero{
+    /* background-image: url(/assets/images/alex_maina_icon.JPG);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 50vh;
+    background-position: center; */
+}
+
+.hero img{
+    width: 60%;
+    height: auto;
+}
+
 .hero-icon {
     width: 25vw;
     /* Dynamic width based on viewport width, with a cap for larger screens below */
@@ -106,6 +120,24 @@ h2 {
     height: auto;
     margin-bottom: 1rem;
 }
+
+.wooden-frame {
+    display: inline-block;
+    padding: 20px; /* This acts as the frame's width */
+    background-color: #8B4513; /* Dark brown for the wood color */
+    box-shadow:
+        0 0 10px #654321, /* Inner shadow for depth */
+        0 0 15px #654321; /* Outer shadow for more depth */
+    margin: 20px;
+    border: 5px solid #A0522D; /* Slightly lighter border to give a layered effect */
+}
+
+.wooden-frame img {
+    display: block; /* Removes bottom space/gap */
+    width: 100%; /* Makes the image expand to the container's padding area */
+    height: auto;
+}
+
 
 h1 {
     font-size: 1.25rem;
