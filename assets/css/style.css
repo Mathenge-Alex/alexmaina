@@ -223,6 +223,69 @@ cite {
     color: #4f5d75;
 }
 
+/* Carousel Section */
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    width: 30rem;
+    margin: auto;
+}
+
+.carousel__item {
+    display: none; /* Hide all images by default */
+    /* width: 100%; */
+    transition: transform 0.5s ease;
+    /* margin: auto; */
+
+}
+
+.carousel__item.active {
+    display: flex; /* Show active item */
+    max-width: 90%;
+    width: 18rem; /* Set fixed width */
+    height: 25rem; /* Set fixed height */
+    overflow: hidden; /* Ensures no part of the image spills out of the container */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.carousel__item img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.carousel__button--prev,
+.carousel__button--next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.carousel__button--prev {
+    left: 10px;
+}
+
+.carousel__button--next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    /* Styles for mobile */
+}
+
+/* End of Carousel Section */
+
+
 /* Contact Section */
 #contact {
     background-color: #f0f0f0;
